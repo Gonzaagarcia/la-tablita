@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./img/background.jpg");
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+
+/*Mobile*/
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: #19282f73;
+}
+
+.navbar-logo__logo {
+  width: 100px;
+  height: 100px;
+}
+
+.navbar-btns {
+  display: flex;
+  flex-direction: column;
+}
+.navbar-btns__btn {
+  margin: 5px 25px;
+  width: 100px;
+  height: 25px;
+  border: none;
+  border-radius: 7px;
+  background-color: #b33030;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 400;
+}
+
+.navbar-btns__btn:hover {
+  background: #b33020;
+  border: 1px solid #fff;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  font-weight: 700;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 85%;
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+  background: #d3eca726;
+  border: none;
+  border-radius: 13px;
+}
+
+.main-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content__title {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  margin-top: 70px;
+  background-color: #19282f;
+  height: 110px;
+}
+.footer-social__logo {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 678px) {
+  .navbar {
+    height: 80px;
+  }
+  .navbar-btns {
+    flex-direction: row;
+  }
+  .navbar-logo__logo {
+    width: 90px;
+    height: 70px;
+  }
+  .navbar-btns__btn {
+    width: 150px;
+    height: 30px;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 70px;
+    height: 60px;
+  }
+  .footer-social {
+    margin-right: 130px;
+  }
+  .main {
+    width: 65%;
+  }
+  .main-content {
+    width: 50%;
+    margin-top: 90px;
+  }
+}
