@@ -40,24 +40,25 @@
   </div>
   <main class="main">
     <div class="main-content">
-      <form>
+      <form action="" id="retorno">
         <div class="form-area">
-          <label class="form-label"> Correo Electronico </label>
-          <input type="email" class="form-input" id="exampleFormControlInput1" placeholder="Ingrese Email">
+          <label class="form-label" for="inputCorreoElectronico"> Correo Electrónico </label>
+          <input type="email" class="form-input" id="inputCorreoElectronico" name="email" placeholder="Ingrese Email">
         </div>
         <div class="form-area">
-          <label class="form-label"> Direccion </label>
-          <input class="form-input" id="exampleFormControlInput1" placeholder="Ingrese la direccion">
+          <label class="form-label" for="inputDireccion"> Dirección </label>
+          <input class="form-input" id="inputDireccion" name="direccion" placeholder="Ingrese la dirección">
         </div>
         <div class="form-area">
-          <label class="form-label">Pedido</label>
-          <textarea class="form-input" id="exampleFormControlTextarea1" placeholder="Ingrese el pedido"
+          <label class="form-label" for="inputPedido">Pedido</label>
+          <textarea class="form-input" id="inputPedido" name="pedido" placeholder="Ingrese el pedido"
             rows="3"></textarea>
         </div>
         <div>
-          <button class="btn-submit" type="submit">Enviar</button>
+          <button class="btn-submit" type="submit" id="enviar">Enviar</button>
         </div>
       </form>
+      <script src="validar.js"></script>
     </div>
   </main>
   <footer class="footer">
