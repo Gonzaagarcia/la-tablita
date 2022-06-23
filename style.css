@@ -133,7 +133,7 @@ body {
   align-items: center;
   flex-direction: column-reverse;
   justify-content: space-around;
-  margin-top: 70px;
+  margin-top: 25vh;
   background-color: #19282f;
   height: 110px;
 }
